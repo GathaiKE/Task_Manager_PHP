@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    padding: 2px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#submit{
+    color: white;
+    background: green;
+    padding: 2px;
+    border: none;
+    font-weight: bold;
+    width: fit-content;
+}
+
+#del,#edit{
+    width: fit-content;
+    padding: 1px 2px;
+    border-radius: 5%;
+}
+
+#del{
+    color: white;
+    background: red;
+    border: 1px solid red;
+}
+
+#del:active{
+    color: red;
+    background: white;
+}
+
+#edit{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+#edit:active{
+    background-color: white;
+    color: blue;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+}
+
+.app{
+    background-color: gold;
+    margin: auto 0;
+    padding: 20px;
+    gap:5px;
+    flex-direction: column;
+}
+
+
+#list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    border: 2px groove black;
+    padding: 8px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+}

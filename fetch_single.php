@@ -12,8 +12,8 @@ if($conn->connect_error){
     die("Connection to DB failed".$conn->connect_error);
 }
 
-if(isset($_GET['id'])){
-    $taskId = $_GET['id'];
+if(isset($_GET["id"])){
+    $taskId = $_GET["id"];
 
     $fetch_stmt = $conn->prepare("SELECT task FROM tasks WHERE id=?");
     $fetch_stmt->bind_param("i",$taskId);
@@ -33,5 +33,8 @@ if(isset($_GET['id'])){
         echo "Error occured! $conn->error";
     }
 }
+
+$fetch_stmt->close();
+$conn->close();
 
 ?>

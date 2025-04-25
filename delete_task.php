@@ -1,5 +1,4 @@
 <?php
-
 $server = "localhost";
 $user = "admin";
 $password = "Admin@123";
@@ -32,5 +31,4 @@ if(isset($_GET['id'])){
 
 $del_stmt->close();
 $conn->close();
-
 ?>
